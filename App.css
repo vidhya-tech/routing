@@ -1,0 +1,23 @@
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  transition: left 0.3s ease;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.app {
+  margin-left: 200px; /* Adjust the margin to make space for the sidebar */
+  transition: margin-left 0.3s ease;
+}
+
+.app .sidebar {
+  z-index: 1;
+}
